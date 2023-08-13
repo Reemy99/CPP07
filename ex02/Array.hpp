@@ -17,7 +17,7 @@ template<typename T>
 class Array
 {
     private:
-        T* _value;
+        T*           _value;
         unsigned int _size;
     public:
         Array();
@@ -27,15 +27,13 @@ class Array
 
         Array& operator=(Array const &rhs);
         T &operator[](unsigned int element) const;
-
 		unsigned int size() const;
-
 };
 
 template <typename T>
 Array<T>::Array()
 {
-    this->_value = new T[0]();
+    this->_value = new T[0];
     this->_len = 0;
 }
 
@@ -77,7 +75,7 @@ T &Array<T>::operator[](unsigned int element) const
 template <typename T>
 Array <T>::~Array()
 {
-    delete this->_value;
+    delete[] _value;
 }
 
 template <typename T>
