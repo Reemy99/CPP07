@@ -11,7 +11,7 @@
 
 
 template< typename T >
-void	iter(T *arr, int size, void(*f)(T &elem))
+void	iter(T *arr, int size, void(*f)(T const &elem))
 {
 	for (int i = 0; i < size; i++)
 		f(arr[i]);
@@ -19,9 +19,9 @@ void	iter(T *arr, int size, void(*f)(T &elem))
 }
 
 template< typename T >
-void	printElement(T &value)
+void	printElement(T const &value) 
 {
-	std::cout << value << std::ends;
+	std::cout << value << std::flush;
 }
 
 #endif
