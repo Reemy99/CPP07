@@ -19,7 +19,7 @@ void	iter(T *arr, int size, void(*f)(T const &elem))
 }
 
 template< typename T >
-void	printElement(T const &value) 
+void	print(T const &value) 
 {
 	std::cout << value << std::flush;
 }

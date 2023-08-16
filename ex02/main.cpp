@@ -21,12 +21,12 @@ int main()
     }
 
 
+    try
+    {
         Array<std::string> strVal(3);
         strVal[0] = "hi";
         strVal[1] = "hello";
         strVal[2] = "world";
-    try
-    {
 
         std::cout << "\nthe size is :" << strVal.size() << std::endl;
         std::cout << "Accessing a valid index :" << strVal[1] << std::endl;

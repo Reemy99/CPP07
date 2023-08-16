@@ -84,12 +84,6 @@ unsigned int Array <T>::size() const
     return this->_size;
 }
 
-template< typename T >
-void	printElement(T &value)
-{
-	std::cout << value << std::ends;
-}
-
 template < typename T >
 std::ostream& operator<<( std::ostream& out, const Array<T>& val)
 {
