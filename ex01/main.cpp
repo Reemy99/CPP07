@@ -10,7 +10,7 @@ int main ()
 	iter(charArr, 5, print);
 
     std::cout << "\n_________________________\n" << std::endl;
-	std::string strArr[3] = {"hi " , "world", "world"};
+	std::string strArr[3] = {"hi " , "hello ", "world"};
 	iter(strArr, 3, print);
 	return (0);
 }

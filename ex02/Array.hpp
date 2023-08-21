@@ -35,6 +35,7 @@ Array<T>::Array()
 {
     this->_value = new T[0];
     this->_len = 0;
+    //std::cout << "Default Constructor" << std::endl;
 }
 
 template <typename T>
@@ -50,6 +51,7 @@ Array<T>::Array(Array &copy): _size(copy._size)
     this->_value = new T[copy._size];
     for (unsigned int i = 0; i < this->_size; i++)
     this->_value[i] = copy._value[i];
+    //std::cout << "Copy Constructor" << std::endl;
 }
 
 template <typename T>
@@ -76,6 +78,7 @@ template <typename T>
 Array <T>::~Array()
 {
     delete[] _value;
+    std::cout << "Deconstructor" << std::endl;
 }
 
 template <typename T>

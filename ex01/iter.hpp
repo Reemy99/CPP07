@@ -9,7 +9,6 @@
 
 #include <iostream>
 
-
 template< typename T >
 void	iter(T *arr, int size, void(*f)(T const &elem))
 {
